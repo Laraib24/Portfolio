@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './pages/card';
+import Sidebar from './Sidebar/sidebar';
+import { makeStyles } from '@material-ui/core/styles';
+import Services from './services/services';
+import Profile from './profile/profile';
+import About from './About/about';
+import Feed from './feed/feed';
+import Work from './work/work';
+import Workcard from './workcard/workcard'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<div><Sidebar></Sidebar>
+  <Profile></Profile>
+  <About></About>
+  <Services></Services>
+  <Feed></Feed>
+  <Work></Work>
+  </div>);
 }
 
 export default App;
