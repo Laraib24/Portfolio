@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     root: props => ({
         display: 'flex',
         marginLeft: 25,
+        cursor: 'pointer'
     }),
     heading : {
         fontWeight: 800,
@@ -27,9 +28,8 @@ const useStyles = makeStyles({
   export default function Sidebaritem(props) {
    
     const classes = useStyles(props);
-    console.log(props.background)
 
-    return (<div className={classes.root}>
+    return (<div onClick={() => document.getElementById(`${props.id}`).scrollIntoView()} className={classes.root}>
         <div className={classes.icons}>{props.icon}</div>
          <h3 className={classes.heading}>{props.h3}</h3>
     </div>);

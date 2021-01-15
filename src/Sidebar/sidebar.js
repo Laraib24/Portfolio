@@ -9,6 +9,8 @@ import StarOutlineOutlinedIcon from '@material-ui/icons/StarOutlineOutlined';
 import HorizontalSplitOutlinedIcon from '@material-ui/icons/HorizontalSplitOutlined';
 import BorderColorOutlinedIcon from '@material-ui/icons/BorderColorOutlined';
 import ForumOutlinedIcon from '@material-ui/icons/ForumOutlined';
+import { Component } from 'react';
+import {Link} from 'react-scroll';
 
 const useStyles = makeStyles({
     sidebaritem: props=> ({
@@ -37,12 +39,12 @@ const useStyles = makeStyles({
 
      return(<div className={classes.sidebarcontainer}>
          <h1 className={classes.heading}>Bolby.</h1>
-         <Sidebaritem icon={<HomeOutlinedIcon />} h3='Home'></Sidebaritem>
-         <Sidebaritem  icon={<InfoOutlinedIcon />} h3='About'></Sidebaritem>
-         <Sidebaritem  icon={<WorkOutlineOutlinedIcon />} h3='Services'></Sidebaritem>
-         <Sidebaritem  icon={<StarOutlineOutlinedIcon />} h3='Feed'></Sidebaritem>
-         <Sidebaritem  icon={<HorizontalSplitOutlinedIcon />} h3='Works'></Sidebaritem>
-         <Sidebaritem  icon={<BorderColorOutlinedIcon />} h3='Blog'></Sidebaritem>
-         <Sidebaritem  icon={<ForumOutlinedIcon />} h3='Contact'></Sidebaritem>
+         <Sidebaritem id={"profile"} icon={<HomeOutlinedIcon />} h3='Home'></Sidebaritem>
+         <Sidebaritem  id={"about"} icon={<InfoOutlinedIcon />} h3='About'></Sidebaritem>
+         <Sidebaritem  id={"service"} icon={<WorkOutlineOutlinedIcon />} h3='Services'></Sidebaritem>
+         <Sidebaritem id={"feed"} icon={<StarOutlineOutlinedIcon />} h3='Feed'></Sidebaritem>
+         <Sidebaritem  id={"works"} icon={<HorizontalSplitOutlinedIcon />} h3='Works'></Sidebaritem>
+         <Sidebaritem id={"blog"} icon={<BorderColorOutlinedIcon />} h3='Blog'></Sidebaritem>
+         <Sidebaritem  id={"contact"} icon={<ForumOutlinedIcon />} h3='Contact'></Sidebaritem>
      </div>)
   }

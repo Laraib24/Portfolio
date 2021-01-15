@@ -1,8 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import SvgIcon, { SvgIconProps } from '@material-ui/core/SvgIcon';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 const useStyles = makeStyles({
     root: props => ({
@@ -18,7 +15,6 @@ const useStyles = makeStyles({
         padding: '10px 0px'
     },
     feedcontainer: {
-        height: 700,
         width: 500,
         margin: '25px 25px',
         backgroundColor: 'white',

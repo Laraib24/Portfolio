@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   export default function Services(props){
     const classes = useStyles(props);
 
-     return(<div className={classes.servicescontainer}>
+     return(<div id="service" className={classes.servicescontainer}>
        <h1 className={classes.heading}>Services</h1>
        <div className={classes.services}>
          <Cards heading={'UI/UX design'} background = {'rgb(108, 108, 229)'} image = {'https://jthemes.net/themes/html/bolby/demo/images/service-1.svg'}></Cards>

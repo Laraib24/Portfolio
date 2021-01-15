@@ -1,21 +1,20 @@
 import React from 'react';
 import { makeStyles, createStyles, withStyles, Theme } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
-import { getThemeProps } from '@material-ui/styles';
 
-const BorderLinearProgress = withStyles((theme: Theme) =>
+const BorderLinearProgress = withStyles((theme) =>
   createStyles({
     root: {
       height: 7,
       borderRadius: 5,
       width: 350
     },
-    colorPrimary: {
+    colorPrimary: props => ({
       backgroundColor: 'white',
-    },
+    }),
     bar: props => ({
       borderRadius: 5,
-      backgroundColor: 'blue',
+      background: props.background,
     }),
   }),
 )(LinearProgress);
@@ -42,7 +41,7 @@ export default function Statusbar(props) {
     <div className={classes.root}>
         <div className={classes.textcontainer}>
         <h3 className={classes.text}>{props.heading}</h3><p className={classes.text}>{props.per}%</p></div>
-      <BorderLinearProgress variant="determinate" value={props.per} />
+      <BorderLinearProgress {...props} variant="determinate" value={props.per} />
     </div>
   );
 }

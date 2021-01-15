@@ -57,21 +57,21 @@ const useStyles = makeStyles({
   export default function About(props){
     const classes = useStyles(props);
 
-     return(<div className={classes.aboutcontainer}>
+     return(<div id="about" className={classes.aboutcontainer}>
        <h1 className={classes.heading}>About Me</h1>
        <div>
        <Avatar className={classes.avatar} alt="Remy Sharp" src="https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"/>
        <div className={classes.about}>
          <div className={classes.aboutright} >
-         <p>I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.</p>
+         <p>I am Laraib Mahmood, web developer (frontend) from Islamabad, Pakistan. I have rich experience in web site design and building and customization, also I can also work with angular</p>
           <Button variant="contained" color="secondary">
            Download CV
           </Button>
           </div>
           <div className={classes.aboutleft}>
-               <Statusbar heading={'Development'} per={'60'}></Statusbar>
-               <Statusbar  heading={'UI/UX design'} per={'80'}></Statusbar>
-               <Statusbar  heading={'Photography'} per={'40'}></Statusbar>
+               <Statusbar background={'blue'} heading={'Development'} per={'60'}></Statusbar>
+               <Statusbar  background={'pink'} heading={'UI/UX design'} per={'80'}></Statusbar>
+               <Statusbar  background={'yellow'} heading={'Photography'} per={'40'}></Statusbar>
           </div>
        </div>
        </div>

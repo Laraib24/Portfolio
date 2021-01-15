@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     },
     name: { 
        color: 'white',
-       marginLeft: -20
+       marginLeft: 15
     },
     context: {
         color: 'white',
@@ -47,15 +47,19 @@ const useStyles = makeStyles({
         marginLeft: -10,
         marginTop: 40,
         width: 150
+    },
+    link: {
+        textDecoration: 'none',
+        color: 'white'
     }
   })
 
 export default function Profile(props){
     const classes = useStyles(props);
-     return(<div className={classes.profile}>
+     return(<div  id="profile" className={classes.profile}>
          <div className={classes.profcontainer}>
        <Avatar className={classes.avatar} alt="Remy Sharp" src="https://jthemes.net/themes/html/bolby/demo/images/avatar-1.svg"/>
-       <h1 className={classes.name}>Bolby Doe</h1>
+       <h1 className={classes.name}>Laraib</h1>
        <p className={classes.context}>I am a frontend Developer</p>
        <div className={classes.socialcon} >
            <InstagramIcon className={classes.social}></InstagramIcon>
@@ -64,7 +68,7 @@ export default function Profile(props){
            <PinterestIcon className={classes.social}></PinterestIcon>
            <LanguageIcon className={classes.social}></LanguageIcon>
        </div>
-       <Button className={classes.button} variant="contained" color="secondary">Hire Me</Button>
+       <Button className={classes.button} variant="contained" color="secondary"><a className={classes.link} href="mailto:laraib24@outlook.com">Hire me</a></Button>
        </div>
        </div>)
   }
