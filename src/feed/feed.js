@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Feedcard from '../feedcards/feedcard';
 import { TwitterTimelineEmbed,  TwitterFollowButton } from 'react-twitter-embed';
-import Medium from '../medium/medium';
 import axios from "axios";
 
 
@@ -71,7 +70,7 @@ try {
          <Feedcard follow={<TwitterFollowButton screenName={'Laraib0304'} />} fed={<TwitterTimelineEmbed sourceType="profile" screenName="Laraib0304" options={{height: 650}} />}></Feedcard>
          {/* <Feedcard follow={<Medium></Medium>}></Feedcard> */}
          {/* {loading ?  <p>Loading...</p> : <p>{medium.feed.title}</p>} */}
-        <Feedcard follow={loading ?  <p>Loading...</p> : <div>
+        <Feedcard  follow={loading ?  <p>Loading...</p> : <div>
          {medium && medium.items.length ? medium.items.map(item => (
            <p className={classes.medium}> <a className={classes.link} href={item.link}><img className={classes.img}  src={item.thumbnail}/> <br /> <b>{item.title}</b></a> <br/> by <i>{item.author} <br /> {item.pubDate}</i></p>
          )) : null } 

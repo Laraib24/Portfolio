@@ -62,43 +62,13 @@ export default function Profile(props){
        <h1 className={classes.name}>Laraib</h1>
        <p className={classes.context}>I am a frontend Developer</p>
        <div className={classes.socialcon} >
-           <InstagramIcon className={classes.social}></InstagramIcon>
-           <TwitterIcon className={classes.social}></TwitterIcon>
-           <FacebookIcon className={classes.social}></FacebookIcon>
-           <PinterestIcon className={classes.social}></PinterestIcon>
-           <LanguageIcon className={classes.social}></LanguageIcon>
+           <a href="https://www.instagram.com/laraib996/?hl=en"><InstagramIcon className={classes.social}></InstagramIcon></a>
+           <a href="https://twitter.com/Laraib0304"><TwitterIcon className={classes.social}></TwitterIcon></a>
+           <a  href="https://www.facebook.com/laraib425/"><FacebookIcon className={classes.social}></FacebookIcon></a>
+           <a  href="https://ro.pinterest.com/rockstarstatus5/_saved/"><PinterestIcon className={classes.social}></PinterestIcon></a>
+           <a  href="#"><LanguageIcon className={classes.social}></LanguageIcon></a>
        </div>
        <Button className={classes.button} variant="contained" color="secondary"><a className={classes.link} href="mailto:laraib24@outlook.com">Hire me</a></Button>
        </div>
        </div>)
   }
-//   componentDidMount(){
-//     let array = ["first text", "second text", "third text"],
-//         intervalDurationMs = 3000,
-//         currentIndex = 0,
-//         maxNumTimes = -1,
-//         numTimesRan = 0;
-        
-//     let interval = setInterval(function() {
-//         if (maxNumTimes !== 0) {
-//             this.setState({
-//                 headerText: array[currentIndex]
-//             });
-//             currentIndex++;
-//             if (currentIndex > array.length-1) {
-//                 if (maxNumTimes === -1) {
-//                     currentIndex = 0;
-//                 } else {
-//                     numTimesRan++;
-//                     if (numTimesRan === maxNumTimes) {
-//                         clearInterval(interval);
-//                     } else {
-//                         currentIndex = 0;
-//                     }
-//                 }
-//             }
-//         } else {
-//             clearInterval(interval);
-//         }
-//     }.bind(this), intervalDurationMs);
-// }
