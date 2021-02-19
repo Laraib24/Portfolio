@@ -6,29 +6,39 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: props => ({
-      width: 263,
-      height: 223,
+      height: '40%',
       background: props.background,
       border: 0,
       borderRadius: 20,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
-      padding: '30px 30px',
-      margin: '30px 20px',
+      padding: '5px 5px',
+      justifyContent:'space-around',
+      flex:1,
+      margin: 10
     }),
     image: {  
-      margin: '0px 70px'
+      display: 'block',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      width: '25%'
     },
     heading : {
         fontWeight: 800,
         fontSize: 20,
         textAlign: "center",
-        padding: '5px 0'
+        padding: '5px 0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '55%'
     },
     content: {
         textAlign: "center",
         fontSize: 16,
-        padding: '5px 0'
+        padding: '5px 0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '75%'
     },
   });
   
@@ -38,7 +48,7 @@ const useStyles = makeStyles({
     console.log(props.background)
 
     return (
-      <Card className={classes.root} >
+      <Card  className={classes.root} >
         <CardContent>
           <img className={classes.image} src={props.image} />
           <Typography className={classes.heading} component="h1">

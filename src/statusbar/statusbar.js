@@ -7,7 +7,7 @@ const BorderLinearProgress = withStyles((theme) =>
     root: {
       height: 7,
       borderRadius: 5,
-      width: 350
+      width: '80%'
     },
     colorPrimary: props => ({
       backgroundColor: 'white',
@@ -25,11 +25,13 @@ const useStyles = makeStyles({
   },
   text: {
       color: 'white',
-      marginRight: 150,
       fontSize: 14,
   },
   textcontainer: {
       display: 'flex',
+      justifyContent:'space-around',
+      flex:1,
+      margin: 5
   }
 });
 

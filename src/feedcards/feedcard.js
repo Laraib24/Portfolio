@@ -15,7 +15,7 @@ const useStyles = makeStyles({
         padding: '10px 0px'
     },
     feedcontainer: {
-        width: 500,
+        width: 435,
         margin: '25px 25px',
         backgroundColor: 'white',
         borderRadius: 10,

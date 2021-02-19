@@ -1,13 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import SvgIcon, { SvgIconProps } from '@material-ui/core/SvgIcon';
+
 
 const useStyles = makeStyles({
     root: props => ({
         display: 'flex',
         marginLeft: 25,
-        cursor: 'pointer'
+        cursor: 'pointer',
     }),
     heading : {
         fontWeight: 800,
@@ -15,7 +14,7 @@ const useStyles = makeStyles({
         color: 'white',
         marginLeft: 20,
         margin: '0px 0px',
-        padding: '10px 0px'
+        padding: '10px 0px',
     },
     icons: {
         color: 'yellow',

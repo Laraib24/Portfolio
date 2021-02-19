@@ -1,0 +1,8 @@
+.profile {
+    width: 100%;
+    background-color: #353353;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+};

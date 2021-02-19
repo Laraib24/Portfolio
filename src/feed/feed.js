@@ -9,19 +9,16 @@ import axios from "axios";
 const useStyles = makeStyles({
     root: props=> ({
       backgroundColor: '#353353',
-      marginTop: -40,
     }),
     feedcontainer: props=>({
       display: 'flex',
+      flexWrap: 'wrap',
       backgroundColor: '#353353',
-      marginLeft: 260
     }),
     heading: {
         color: 'white',
-        fontSize: 50,
-        fontWeight: 600,
-        marginLeft: 300,
-        marginBottom: 60,
+        marginLeft: 10,
+        fontSize: 42
     },
     medium: {
       borderBottom: '2px solid grey',
@@ -68,15 +65,12 @@ try {
          <h1 className={classes.heading}>Feed</h1>
          <div  className={classes.feedcontainer}>
          <Feedcard follow={<TwitterFollowButton screenName={'Laraib0304'} />} fed={<TwitterTimelineEmbed sourceType="profile" screenName="Laraib0304" options={{height: 650}} />}></Feedcard>
-         {/* <Feedcard follow={<Medium></Medium>}></Feedcard> */}
-         {/* {loading ?  <p>Loading...</p> : <p>{medium.feed.title}</p>} */}
-        <Feedcard  follow={loading ?  <p>Loading...</p> : <div>
+         <Feedcard  follow={loading ?  <p>Loading...</p> : <div>
          {medium && medium.items.length ? medium.items.map(item => (
            <p className={classes.medium}> <a className={classes.link} href={item.link}><img className={classes.img}  src={item.thumbnail}/> <br /> <b>{item.title}</b></a> <br/> by <i>{item.author} <br /> {item.pubDate}</i></p>
          )) : null } 
          </div>}></Feedcard>
-        
          </div>
      </div>)
-  }
+}
   

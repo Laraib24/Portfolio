@@ -7,31 +7,27 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import LanguageIcon from '@material-ui/icons/Language';
 import Button from '@material-ui/core/Button';
+import './style.css';
 
 const useStyles = makeStyles({
     profile: props=> ({
-      backgroundColor: '#353353',
-      height: 557,
-      marginLeft: 270,
     }),
     profcontainer: {
-        marginLeft: 500,
-        paddingTop: 100
+        paddingTop: -20,
     },
     avatar: { 
         width: 120,
         height: 120,
+        marginLeft: 30,
     },
     name: { 
        color: 'white',
-       marginLeft: 15
+       textAlign: "center"
     },
     context: {
         color: 'white',
-        marginLeft: -33,
-        marginTop: -10,
         fontWeight: 600,
-
+        textAlign: "center"
     },
     social: {
         color: 'white',
@@ -39,13 +35,13 @@ const useStyles = makeStyles({
 
     },
     socialcon:{
-        marginLeft: -20,
-        marginTop: 30
+        marginTop: 30,
+        marginLeft: 16,
     },
     button: {
         borderRadius: 40,
-        marginLeft: -10,
         marginTop: 40,
+        marginLeft: 26,
         width: 150
     },
     link: {
@@ -56,7 +52,7 @@ const useStyles = makeStyles({
 
 export default function Profile(props){
     const classes = useStyles(props);
-     return(<div  id="profile" className={classes.profile}>
+     return(<div  id="profile" className="profile">
          <div className={classes.profcontainer}>
        <Avatar className={classes.avatar} alt="Remy Sharp" src="https://jthemes.net/themes/html/bolby/demo/images/avatar-1.svg"/>
        <h1 className={classes.name}>Laraib</h1>

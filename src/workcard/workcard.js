@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles({
     root: props => ({
-      width: 463,
+      width: '27%',
       height: 223,
       backgroundColor: 'white',
       border: 0,
@@ -13,12 +13,11 @@ const useStyles = makeStyles({
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
       padding: '10px 10px',
-      margin: '30px 13px',
     }),
     image: {  
-      margin: '-50px -50px',
-      width: 300,
-      height: 300,
+      display: 'block',
+      margin: 'auto auto',
+      width: '100%',
       borderRadius: 40
     },
     heading : {
@@ -27,12 +26,7 @@ const useStyles = makeStyles({
         textAlign: "center",
         padding: '5px 0'
     }, 
-    content: {
-        textAlign: "center",
-        fontSize: 16,
-        padding: '5px 0'
-    },
-  });
+      });
   
   export default function Workcard(props) {
    
@@ -40,7 +34,7 @@ const useStyles = makeStyles({
     console.log(props.background)
 
     return (<Card className={classes.root} variant="outlined">
-    <CardContent className={classes.content}>
+    <CardContent>
      <img className={classes.image} src={props.img}></img>
     </CardContent>
   </Card>

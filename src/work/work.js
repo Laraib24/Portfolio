@@ -6,20 +6,17 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles({
     services: props=> ({
       display: 'flex',
-      marginLeft: 290,
     }),
     workcontainer: props=>({
       display: 'flex',
       flexDirection: 'column',
       backgroundColor: '#353353',
-      marginLeft: 270,
       paddingBottom: 100
     }),
     heading: props => ({
       color: 'white',
-      marginLeft: 30,
-      marginTop: 100,
-      marginBottom: 80,
+      marginLeft: 10,
+      marginBottom: 50,
     }),
     bottomtext: {
       textAlign: "center",
@@ -27,10 +24,13 @@ const useStyles = makeStyles({
       marginTop: 20,
       marginBottom: 100,
       fontWeight: 600,
-      marginLeft: 250
     },
     card: {
       display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent:'space-around',
+      flex:1,
+      margin: 10
     },
     button: {
       color: 'white',

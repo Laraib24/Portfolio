@@ -1,14 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { withStyles } from '@material-ui/styles';
 import Statusbar from '../statusbar/statusbar';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import Aboutfooter from '../aboutfooter/aboutfooter';
-import WhatshotOutlinedIcon from '@material-ui/icons/WhatshotOutlined';
-import LocalCafeOutlinedIcon from '@material-ui/icons/LocalCafeOutlined';
-import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
-import Brightness5OutlinedIcon from '@material-ui/icons/Brightness5Outlined';
+import Media from 'react-media';
 
 
 const useStyles = makeStyles({
@@ -16,51 +12,65 @@ const useStyles = makeStyles({
       display: 'flex',
       flexDirection: 'column',
       backgroundColor: '#353353',
-      padding: '10px 10px'
+      padding: '10px 10px',
+      height: 768,
     }),
     heading: props => ({
       color: 'white',
-      marginLeft: 290,
-      marginBottom: 60,
+      marginLeft: 10,
     }),
     avatar: { 
       width: 120,
       height: 120,
-      marginTop: 50,
-      marginLeft: 300,
+      padding: '0px 10px'
   },
   about: {
+    display: 'flex',
+    justifyContent:'space-around',
+    flex:1,
+    margin: 5,
     color: 'white',
     border: '1px solid grey',
-    marginLeft: 480,
-    marginRight: 10,
     fontSize: 18,
     lineHeight: 2,
-    display: 'flex',
     borderRadius: 40,
-    padding: '18px 18px',
-    marginTop: -120,
+    padding: '5px 5px',
+    width: '30%',
+    height: '60%',
+    float: 'right'
   },
   aboutright: {
-    padding: '4px 4px'
+    padding: '20px 14px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '60%'
   },
   aboutleft: { 
-    padding: '0px 10px',
-    marginRight: -35,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '40%'
   },
   aboutfooter: {
     display: 'flex',
-    marginLeft: 250,
-    marginTop: 50,
+    flexWrap: 'wrap',
+    height: '30%',
   },
+  ab: {
+    display: 'flex',
+    justifyContent:'space-between',
+    flex:1,
+    margin: 10
+  }
   })
   export default function About(props){
     const classes = useStyles(props);
 
      return(<div id="about" className={classes.aboutcontainer}>
        <h1 className={classes.heading}>About Me</h1>
-       <div>
+       <div className={classes.ab}>
+         <Media  query="(min-width: 1024px)">
        <Avatar className={classes.avatar} alt="Remy Sharp" src="https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"/>
+       </Media>
        <div className={classes.about}>
          <div className={classes.aboutright} >
          <p>I am Laraib Mahmood, web developer (frontend) from Islamabad, Pakistan. I have rich experience in web site design and building and customization, also I can also work with angular</p>
@@ -69,8 +79,8 @@ const useStyles = makeStyles({
           </Button>
           </div>
           <div className={classes.aboutleft}>
-               <Statusbar background={'blue'} heading={'Development'} per={'60'}></Statusbar>
-               <Statusbar  background={'pink'} heading={'UI/UX design'} per={'80'}></Statusbar>
+               <Statusbar background={'blue'} heading={'Development'} per={'100'}></Statusbar>
+               <Statusbar  background={'red'} heading={'UI/UX design'} per={'30'}></Statusbar>
                <Statusbar  background={'yellow'} heading={'Photography'} per={'40'}></Statusbar>
           </div>
        </div>

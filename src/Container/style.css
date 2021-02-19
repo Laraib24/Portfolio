@@ -1,0 +1,11 @@
+.container {
+    width: 80%;
+   
+}
+@media (min-width: 1024px) {
+    .container{
+       float: left;
+       width: 100%;
+    }
+    
+}

@@ -7,25 +7,25 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles({
     services: props=> ({
       display: 'flex',
-      marginLeft: 290,
+      flexWrap: 'wrap',
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: 80, 
+      marginBottom: 80
     }),
     servicescontainer: props=>({
-      display: 'flex',
-      flexDirection: 'column',
-      backgroundColor: '#353353'
+      backgroundColor: '#353353',
+      marginTop: '-2%',
+      height: 700
     }),
     heading: props => ({
       color: 'white',
-      marginLeft: 290,
-      marginBottom: 80,
+      marginLeft: 10,
     }),
     bottomtext: {
       textAlign: "center",
       color: 'white',
-      marginTop: 20,
-      marginBottom: 100,
       fontWeight: 600,
-      marginLeft: 250
     }
   })
   export default function Services(props){
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 
      return(<div id="service" className={classes.servicescontainer}>
        <h1 className={classes.heading}>Services</h1>
-       <div className={classes.services}>
+       <div  className={classes.services}>
          <Cards heading={'UI/UX design'} background = {'rgb(108, 108, 229)'} image = {'https://jthemes.net/themes/html/bolby/demo/images/service-1.svg'}></Cards>
          <Cards heading={'Web Development'} background = {'rgb(249, 215, 76)'} image = {'https://jthemes.net/themes/html/bolby/demo/images/service-2.svg'}></Cards>
          <Cards heading={'Photography'} background = {'rgb(249, 123, 139)'} image = {'https://jthemes.net/themes/html/bolby/demo/images/service-3.svg'}></Cards>

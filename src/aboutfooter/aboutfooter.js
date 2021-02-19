@@ -7,37 +7,39 @@ import { StylesContext } from '@material-ui/styles';
 const useStyles = makeStyles({
     root: props => ({
         display: 'flex',
-        margin: '50px 50px'
     }),
     heading : {
         fontWeight: 800,
         fontSize: 26,
         color: 'white',
-        marginLeft: 20,
-        margin: '0px 0px',
-        padding: '10px 10px'
+        textAlign: "center"
     },
     icons: {
         marginTop: 10,
-        width: 20,
-        height: 150
     },
     text: {
         fontSize: 16,
         fontWeight: 600,
-        color: 'white'
+        color: 'white',
+        textAlign: "center"
     },
     container: {
         display: 'flex',
-        padding: '10px 30px',
-        margin: '40px 40px',
-        border: '1px solid yellow',
-        borderRadius: 40
+        justifyContent:'space-around',
+        flex:1,
+        margin: 5,
+        flexDirection: 'column',
+        padding: '20px 20px',
+        border: '5px solid grey',
+        borderRadius: 40,
+        height: '60%'
     },
     image: {
-        width: 40,
-        height: 50,
-        color: 'grey'
+        color: 'white',
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '25%',
     }
   });
 
