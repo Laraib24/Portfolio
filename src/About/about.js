@@ -14,6 +14,9 @@ const useStyles = makeStyles({
       backgroundColor: '#353353',
       padding: '10px 10px',
       height: 768,
+      ['@media (max-width: 1274px)']: {
+        height: '100%'
+    }
     }),
     heading: props => ({
       color: 'white',
@@ -26,23 +29,20 @@ const useStyles = makeStyles({
   },
   about: {
     display: 'flex',
-    justifyContent:'space-around',
-    flex:1,
+    flexWrap: 'wrap',
     margin: 5,
     color: 'white',
     border: '1px solid grey',
     fontSize: 18,
     lineHeight: 2,
     borderRadius: 40,
-    padding: '5px 5px',
-    width: '30%',
-    height: '60%',
-    float: 'right'
+    padding: '15px 15px',
+    ['@media (max-width: 1274px)']: {
+      height: '100%',
+      padding: '25px 25px'
+  }
   },
   aboutright: {
-    padding: '20px 14px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
     width: '60%'
   },
   aboutleft: { 
@@ -54,11 +54,14 @@ const useStyles = makeStyles({
     display: 'flex',
     flexWrap: 'wrap',
     height: '30%',
+    ['@media (max-width: 1274px)']: {
+      width: '100%',
+      height: '30%',
+      marginTop: 50
+  }
   },
   ab: {
     display: 'flex',
-    justifyContent:'space-between',
-    flex:1,
     margin: 10
   }
   })

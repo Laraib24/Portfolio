@@ -9,6 +9,7 @@ import axios from "axios";
 const useStyles = makeStyles({
     root: props=> ({
       backgroundColor: '#353353',
+      marginTop: -29
     }),
     feedcontainer: props=>({
       display: 'flex',

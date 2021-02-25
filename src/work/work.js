@@ -30,7 +30,8 @@ const useStyles = makeStyles({
       flexWrap: 'wrap',
       justifyContent:'space-around',
       flex:1,
-      margin: 10
+      margin: 10,
+      
     },
     button: {
       color: 'white',

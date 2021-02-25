@@ -15,7 +15,10 @@ const useStyles = makeStyles({
       padding: '5px 5px',
       justifyContent:'space-around',
       flex:1,
-      margin: 10
+      margin: 10,
+      ['@media (max-width: 650px)']: {
+        width: '70%'
+    }
     }),
     image: {  
       display: 'block',

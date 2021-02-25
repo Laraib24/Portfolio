@@ -23,6 +23,11 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius: 20,
       padding: '10px 10px',
       margin: '10px 20px',
+      ['@media (max-width: 1024px)']: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '100%'
+     },
     },
     media: {
       height: 0,

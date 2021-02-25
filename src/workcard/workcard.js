@@ -13,6 +13,18 @@ const useStyles = makeStyles({
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
       padding: '10px 10px',
+      ['@media (max-width: 1024px)']: {
+        width: '20%',
+        height: '20%'
+    },
+    ['@media (max-width: 650px)']: {
+      width: '45%',
+      marginTop: 10
+   },
+   ['@media (max-width: 418px)']: {
+    width: '35%',
+    marginTop: 10
+ },
     }),
     image: {  
       display: 'block',

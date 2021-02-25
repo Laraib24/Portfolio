@@ -20,7 +20,12 @@ const useStyles = makeStyles({
         backgroundColor: 'white',
         borderRadius: 10,
         padding: '15px 15px',
-        border: '10px solid yellow'
+        border: '10px solid yellow',
+        ['@media (max-width: 1274px)']: {
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '80%'
+        }
     }
   });
 

@@ -6,7 +6,9 @@ import Blogcard from '../blogcard/blogcard';
 const useStyles = makeStyles({
     root: props=> ({
       backgroundColor: '#353353',
-      height: 650
+      height: '100%',
+      marginTop: -29,
+      paddingBottom: 50 ,
     }),
     blogcontainer: props=>({
       display: 'flex',

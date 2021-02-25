@@ -7,25 +7,32 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles({
     services: props=> ({
       display: 'flex',
-      flexWrap: 'wrap',
       justifyContent: "center",
-      alignItems: "center",
-      marginTop: 80, 
-      marginBottom: 80
+      alignItems: "center", 
+      marginBottom: 80,
+      ['@media (max-width: 650px)']: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
     }),
     servicescontainer: props=>({
       backgroundColor: '#353353',
-      marginTop: '-2%',
-      height: 700
+      height: '100%',
+      marginTop: -22,
     }),
     heading: props => ({
       color: 'white',
       marginLeft: 10,
+      ['@media (max-width: 1274px)']: {
+        paddingTop: 50,
+        paddingBottom: 50
+    }
     }),
     bottomtext: {
       textAlign: "center",
       color: 'white',
       fontWeight: 600,
+      paddingBottom: 50
     }
   })
   export default function Services(props){

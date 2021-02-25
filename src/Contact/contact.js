@@ -6,7 +6,9 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles({
     root: props=> ({
       backgroundColor: '#353353',
-      height: '80%'
+      height: '100%',
+      marginTop: -28,
+      paddingBottom: 50
     }),
     blogcontainer: props=>({
       display: 'block',
@@ -36,7 +38,11 @@ const useStyles = makeStyles({
         border: 'none',
         width: '30%',
         height: 50,
-        margin: '10px 10px'
+        margin: '10px 10px',
+        ['@media (max-width: 650px)']: {
+            marginLeft: '5%',
+            width: '90%'
+         },
     },
     sub: {
         width: '30%',
@@ -45,6 +51,10 @@ const useStyles = makeStyles({
         outline: 'none',
         border: 'none',
         borderRadius: 40,
+        ['@media (max-width: 650px)']: {
+            marginLeft: '5%',
+            width: '90%'
+         },
     },
     msg: {
         width: '65%',
@@ -53,14 +63,21 @@ const useStyles = makeStyles({
         border: 'none',
         borderRadius: 40,
         margin: '10px 10px',
+        ['@media (max-width: 650px)']: {
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '90%'
+         },
     },
     con: {
         marginLeft: 0,
-        marginTop: 40
+        marginTop: 40,
+       
     },
     conone: {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+       
     },
     btn: {
         width: 100,
@@ -68,7 +85,13 @@ const useStyles = makeStyles({
         marginTop: 20,
         marginRight: 'auto',
         marginLeft: 20,
-        borderRadius: 30
+        borderRadius: 30,
+        ['@media (max-width: 650px)']: {
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '90%'
+         },
+        
 
     }
   })
