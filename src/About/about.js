@@ -91,7 +91,7 @@ const useStyles = makeStyles({
        <div className={classes.aboutfooter}>
          <Aboutfooter image={'https://webstockreview.net/images/clipart-flames-fire-symbol-12.png'} num={'198'} text={'projects completed'}></Aboutfooter>
          <Aboutfooter  image={'https://i.pinimg.com/originals/00/cc/b6/00ccb6f59d1215f5666ad229af120e9f.png'} num={'5670'} text={'Cup of coffee'}></Aboutfooter>
-         <Aboutfooter  image={'https://i.dlpng.com/static/png/6736490_preview.png'} num={'427'} text={'Satishfied Clients'}></Aboutfooter>
+         <Aboutfooter  image={'https://i.dlpng.com/static/png/4685763-make-friends-svg-png-icon-free-download-222142-onlinewebfontscom-making-friends-png-980_866_preview.png'} num={'427'} text={'Satishfied Clients'}></Aboutfooter>
          <Aboutfooter  image={'https://cdn3.iconfinder.com/data/icons/vote/16/medal_rank_premium-512.png'}  num={'35'} text={'Nominees Winner'}></Aboutfooter>
        </div>
        </div>)
