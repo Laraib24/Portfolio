@@ -91,8 +91,10 @@ const useStyles = makeStyles({
             marginRight: 'auto',
             width: '90%'
          },
-        
-
+    },
+    link: {
+        textDecoration: 'none',
+        color: 'white'
     }
   })
  
@@ -106,7 +108,7 @@ const useStyles = makeStyles({
                  <h3 className={classes.headingtwo}>Lets talk about Everything!</h3>
                  <p className={classes.text}>Dont like forms? Send me an Email</p>
              </div>
-             <div className={classes.con}>
+             {/* <div className={classes.con}>
                  <div>
                      <input placeholder="Your Name" className={classes.field}></input>
                      <input   placeholder="Email" className={classes.field}></input>
@@ -116,7 +118,7 @@ const useStyles = makeStyles({
                 <input   placeholder="Message here" className={classes.msg}></input>
                 <Button className={classes.btn} variant="contained" color="secondary">Submit</Button>
                 </div>
-             </div>
+             </div> */}
+             <Button className={classes.btn} variant="contained" color="secondary"><a className={classes.link} href="mailto:laraib24@outlook.com">Contact</a></Button>
             </div>
-     </div>)
-  }
+     </div>)}

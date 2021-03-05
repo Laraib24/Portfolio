@@ -45,8 +45,8 @@ const useStyles = makeStyles({
          <Sidebaritem  id={"about"} icon={<InfoOutlinedIcon />} h3='About'></Sidebaritem>
          <Sidebaritem  id={"service"} icon={<WorkOutlineOutlinedIcon />} h3='Services'></Sidebaritem>
          <Sidebaritem id={"feed"} icon={<StarOutlineOutlinedIcon />} h3='Feed'></Sidebaritem>
-         <Sidebaritem  id={"works"} icon={<HorizontalSplitOutlinedIcon />} h3='Works'></Sidebaritem>
-         <Sidebaritem id={"blog"} icon={<BorderColorOutlinedIcon />} h3='Blog'></Sidebaritem>
+         {/* <Sidebaritem  id={"works"} icon={<HorizontalSplitOutlinedIcon />} h3='Works'></Sidebaritem>
+         <Sidebaritem id={"blog"} icon={<BorderColorOutlinedIcon />} h3='Blog'></Sidebaritem> */}
          <Sidebaritem  id={"contact"} icon={<ForumOutlinedIcon />} h3='Contact'></Sidebaritem>
      </div>
      </Hidden>

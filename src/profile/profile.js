@@ -5,7 +5,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PinterestIcon from '@material-ui/icons/Pinterest';
-import LanguageIcon from '@material-ui/icons/Language';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from '@material-ui/core/Button';
 import './style.css';
 
@@ -36,7 +36,10 @@ const useStyles = makeStyles({
     },
     socialcon:{
         marginTop: 30,
-        marginLeft: 16,
+       display: 'flex',
+       marginLeft: 'auto',
+       marginRight: 'auto',
+       width: '85%'
     },
     button: {
         borderRadius: 40,
@@ -62,7 +65,7 @@ export default function Profile(props){
            <a href="https://twitter.com/Laraib0304"><TwitterIcon className={classes.social}></TwitterIcon></a>
            <a  href="https://www.facebook.com/laraib425/"><FacebookIcon className={classes.social}></FacebookIcon></a>
            <a  href="https://ro.pinterest.com/rockstarstatus5/_saved/"><PinterestIcon className={classes.social}></PinterestIcon></a>
-           <a  href="#"><LanguageIcon className={classes.social}></LanguageIcon></a>
+           <a href="https://github.com/Laraib24"><GitHubIcon className={classes.social}></GitHubIcon></a>
        </div>
        <Button className={classes.button} variant="contained" color="secondary"><a className={classes.link} href="mailto:laraib24@outlook.com">Hire me</a></Button>
        </div>

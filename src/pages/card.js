@@ -58,7 +58,7 @@ const useStyles = makeStyles({
          {props.heading}
         </Typography>
         <Typography className={classes.content} variant="p" component="p">
-        Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.
+        {props.para}
         </Typography>
         </CardContent>
       </Card>

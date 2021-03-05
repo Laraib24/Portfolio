@@ -29,7 +29,7 @@ export default function Container (props) {
         <About id="about"></About>
         <Services id="services"></Services>
         <Feed id="feed"></Feed>
-        <Work id="work"></Work>
-        <Blog id="blog"></Blog>
+        {/* <Work id="work"></Work> */}
+        {/* <Blog id="blog"></Blog> */}
         <Contact id="contact"></Contact></div>)
 }

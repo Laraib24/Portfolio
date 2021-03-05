@@ -76,23 +76,23 @@ const useStyles = makeStyles({
        </Media>
        <div className={classes.about}>
          <div className={classes.aboutright} >
-         <p>I am Laraib Mahmood, web developer (frontend) from Islamabad, Pakistan. I have rich experience in web site design and building and customization, also I can also work with angular</p>
-          <Button variant="contained" color="secondary">
+         <p>I am Laraib Mahmood, a frontend web Developer having experience in developing feature rich modern applications using React & Angular.</p>
+          <Button variant="contained" color="secondary" href="https://drive.google.com/u/0/uc?id=1_WO_g14EaF7b_P9a4whRFTquixbIUYtv&export=download">
            Download CV
           </Button>
           </div>
           <div className={classes.aboutleft}>
-               <Statusbar background={'blue'} heading={'Development'} per={'100'}></Statusbar>
-               <Statusbar  background={'red'} heading={'UI/UX design'} per={'30'}></Statusbar>
-               <Statusbar  background={'yellow'} heading={'Photography'} per={'40'}></Statusbar>
+               <Statusbar background={'blue'} heading={'Development'} per={'80'}></Statusbar>
+               <Statusbar  background={'red'} heading={'UI/UX design'} per={'80'}></Statusbar>
+               <Statusbar  background={'yellow'} heading={'Content Writing'} per={'70'}></Statusbar>
           </div>
        </div>
        </div>
        <div className={classes.aboutfooter}>
-         <Aboutfooter image={'https://webstockreview.net/images/clipart-flames-fire-symbol-12.png'} num={'198'} text={'projects completed'}></Aboutfooter>
+         {/* <Aboutfooter image={'https://webstockreview.net/images/clipart-flames-fire-symbol-12.png'} num={'198'} text={'projects completed'}></Aboutfooter>
          <Aboutfooter  image={'https://i.pinimg.com/originals/00/cc/b6/00ccb6f59d1215f5666ad229af120e9f.png'} num={'5670'} text={'Cup of coffee'}></Aboutfooter>
          <Aboutfooter  image={'https://i.dlpng.com/static/png/4685763-make-friends-svg-png-icon-free-download-222142-onlinewebfontscom-making-friends-png-980_866_preview.png'} num={'427'} text={'Satishfied Clients'}></Aboutfooter>
          <Aboutfooter  image={'https://cdn3.iconfinder.com/data/icons/vote/16/medal_rank_premium-512.png'}  num={'35'} text={'Nominees Winner'}></Aboutfooter>
-       </div>
+       */} </div> 
        </div>)
   }
